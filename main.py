@@ -1,3 +1,6 @@
+from turtle import clear
+
+
 título = input('Qual o seu título de livro favorito?: ')
 autor = input('Qual o nome do/a autor/a?: ')
 sobrenome = input('Qual o sobrenome?: ')
