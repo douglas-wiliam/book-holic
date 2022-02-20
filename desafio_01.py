@@ -1,4 +1,5 @@
 print ('Olá, usuário! Qual documento você quer inserir?')
+print ('Lista de documentos aceitos: livro; tese; dissertação; tcc e artigo')
 doc = input ()
 
 class color:
@@ -11,14 +12,14 @@ while doc != '':
         autor = input ('Nome do autor: ')
         sobrenome = input('Sobrenome: ')
         titulo = input('Título: ')
-        sub_tit = input ('Subtítulo: ')               
+        sub_tit = input ('Subtítulo: ')              
         ed = input ('Edição: ')
         local = input ('Local: ')
         editora = input ('Editora: ')
         ano = input ('Ano: ')
         print (sobrenome.upper() + ', ' + autor.capitalize() + '. ' + color.BOLD + titulo.capitalize() + color.END 
         + ': ' + sub_tit + '. ' + ed + '. ed. ' + local.title() + ': ' + editora.capitalize() + ', ' + ano + '.')
-    elif doc == 'tese' or 'tcc' or 'dissertação' or 'trabalho acadêmico':
+    elif doc == 'tese' or doc == 'tcc' or doc == 'dissertação' or doc == 'trabalho acadêmico':
         autor = input ('Nome do autor: ')
         sobrenome = input ('SObrenome: ')
         titulo = input('Título: ')
