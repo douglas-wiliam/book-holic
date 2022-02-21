@@ -7,28 +7,28 @@ class month:
 
     def get_month_acronyme(month_name):
         if(month_name.upper() == "JANEIRO"):
-            return "JAN"
+            return "jan."
         elif(month_name.upper() == "FEVEREIRO"):
-            return "FEV"
-        elif(month_name.upper() == "MARÇO"):
-            return "MAR"
+            return "fev."
+        elif(month_name.upper() == "MARÇO" or month_name.upper() == "MARCO"):
+            return "mar."
         elif(month_name.upper() == "ABRIL"):
-            return "ABR"
+            return "abr."
         elif(month_name.upper() == "MAIO"):
-            return "MAIO"
+            return "maio"
         elif(month_name.upper() == "JUNHO"):
-            return "JUN"
+            return "jun."
         elif(month_name.upper() == "JULHO"):
-            return "JUL"
+            return "jul."
         elif(month_name.upper() == "AGOSTO"):
-            return "AGO"
+            return "ago."
         elif(month_name.upper() == "SETEMBRO"):
-            return "SET"
+            return "set."
         elif(month_name.upper() == "OUTUBRO"):
-            return "OUT"
+            return "out."
         elif(month_name.upper() == "NOVEMBRO"):
-            return "NOV"
+            return "nov."
         elif(month_name.upper() == "DEZEMBRO"):
-            return "DEZ"
+            return "dez."
         else:
-            return ""
+            return "NOME DE MÊS INVÁLIDO"
