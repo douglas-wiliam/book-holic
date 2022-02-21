@@ -27,6 +27,7 @@ while opcao != '0':
         ano = input('Ano: ')
         print(sobrenome.upper() + ', ' + autor.capitalize() + '. ' + color.BOLD + titulo.capitalize() + color.END
               + ': ' + sub_tit + '. ' + ed + '. ed. ' + local.title() + ': ' + editora.capitalize() + ', ' + ano + '.')
+        print('')
 
     elif opcao == '2':
         autor = input('Nome do autor: ')
@@ -44,6 +45,7 @@ while opcao != '0':
               + ': ' + sub_tit + '. ' + ano_dep + '. ' +
               tipo_trab.title() + ' (' + grau.capitalize() + ' em '
               + curso.title() + ')' + ' - ' + instituicao.title() + ', ' + local.capitalize() + ', ' + ano_apr + '.')
+        print('')
 
     elif opcao == '3':
         autor = input('Nome do autor: ')
@@ -62,9 +64,11 @@ while opcao != '0':
               + color.BOLD + revista.capitalize() + color.END + ', ' +
               local.capitalize() + ', v. ' + vol + ', n. '
               + num + ', p. ' + pag_in + '-' + pag_fin + ', ' + month.get_month_acronyme(mes) + ', ' + ano + '.')
+        print('')
 
     elif (opcao != '0'):
         print('OPÇÃO SELECIONADA INVÁLIDA!')
+        print('')
 
     print('PARA INSERIR DOCUMENTOS DO TIPO LIVRO DIGITE 1 E TECLE [ENTER]')
 
