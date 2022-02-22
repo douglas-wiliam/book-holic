@@ -20,13 +20,31 @@ while opcao != '0':
         autor = input('Nome do autor: ')
         sobrenome = input('Sobrenome: ')
         titulo = input('Título: ')
-        sub_tit = input('Subtítulo: ')
-        ed = input('Edição: ')
+        sub_tit = input('Subtítulo: ')  # Não obrigatório
+        ed = input('Edição: ')  # Não obrigatório
         local = input('Local: ')
         editora = input('Editora: ')
         ano = input('Ano: ')
-        print(sobrenome.upper() + ', ' + autor.capitalize() + '. ' + color.BOLD + titulo.capitalize() + color.END
-              + ': ' + sub_tit + '. ' + ed + '. ed. ' + local.title() + ': ' + editora.capitalize() + ', ' + ano + '.')
+
+        referencia = ''
+        referencia = referencia + sobrenome.upper()
+        referencia = referencia + ', ' + autor.capitalize()
+        referencia = referencia + '. ' + color.BOLD + titulo.capitalize() + color.END
+
+        if sub_tit != '':
+            referencia = referencia + ': ' + sub_tit + '. '
+        else:
+            referencia = referencia + '. '
+
+        if ed != '1':
+            referencia = referencia + ed + '. ed. '
+        else:
+            referencia = referencia + '. '
+
+        referencia = referencia + local.title() + ': ' + editora.capitalize() + \
+            ', ' + ano + '.'
+
+        print(referencia)
         print('')
 
     elif opcao == '2':
