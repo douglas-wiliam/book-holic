@@ -36,10 +36,10 @@ while opcao != '0':
         else:
             referencia = referencia + '. '
 
-        if ed != '1':
+        if ed > '1':
             referencia = referencia + ed + '. ed. '
         else:
-            referencia = referencia + '. '
+            referencia = referencia
 
         referencia = referencia + local.title() + ': ' + editora.capitalize() + \
             ', ' + ano + '.'
